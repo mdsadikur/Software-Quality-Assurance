@@ -5,8 +5,9 @@ driver = webdriver.Chrome(executable_path="C:\\Users\\Md Sadikur Rahman\\Desktop
 
 class SwitchWindow():
     def test(self):
-        driver.get("https://the-internet.herokuapp.com/windows")
         driver.maximize_window()
+        driver.get("https://the-internet.herokuapp.com/windows")
+
         time.sleep(3)
         parent_handle=driver.current_window_handle
         print(parent_handle)
